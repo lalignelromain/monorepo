@@ -4,28 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-    "build:projet-blabla-book-front": "cd projet-blabla-book-front && npm run build",
-    "build:projet-blabla-book-back": "cd projet-blabla-book-back && npm run build",
-    "build": "npm run build:projet-blabla-book-front && npm run build:projet-blabla-book-back",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:frontend": "cd projet-blabla-book-front && npm install && npm run build",
+    "build:backend": "cd projet-blabla-book-back && npm install && npm run build",
+    "build": "npm run build:frontend && npm run build:backend"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bcrypt": "^5.1.1",
-    "bcryptjs": "^2.4.3",
-    "cookie-parser": "^1.4.6",
-    "cors": "^2.8.5",
-    "csurf": "^1.10.0",
-    "dotenv": "^16.4.5",
-    "express": "^5.0.0",
-    "jsonwebtoken": "^9.0.2",
-    "pg": "^8.12.0",
-    "sanitize-html": "^2.13.0",
-    "sequelize": "^6.37.3"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.4"
-  }
+  "license": "ISC"
 }
